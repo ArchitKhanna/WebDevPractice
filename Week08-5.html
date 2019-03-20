@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>CS4082 Week 8</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+   <script type="text/javascript" src="js/week08-5.js"></script>
+
+</head>
+<body>
+<h1>CS4082 Week 8 Q5 </h1>
+
+<button type="button" onclick="squares()">Create Mozaic</button>
+
+<div id="results">
+</div>
+
+
+<script>
+
+function squares(){
+
+  var numSquares=20;
+
+  for(i=1;i<=numSquares;i++){
+
+    idname = "row"+i;
+    document.getElementById('results').innerHTML+="<div id='" + idname + "' style='display:flex;'></div>"
+
+    for(j=1;j<=numSquares;j++){
+      idVal = ""+i+j;
+      addSquare(idVal,idname);
+    }
+
+  }
+}
+
+</script>
+
+</body>
+</html>
